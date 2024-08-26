@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4FC59E5B-6D2A-4B66-9FDE-9CFCC76AE34D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>dbproject</RootNamespace>
+    <AssemblyName>dbproject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adddeptform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adddeptform.Designer.cs">
+      <DependentUpon>adddeptform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminform.Designer.cs">
+      <DependentUpon>adminform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="assignform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="assignform.Designer.cs">
+      <DependentUpon>assignform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="createcourseform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="createcourseform.Designer.cs">
+      <DependentUpon>createcourseform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbprojecttDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbprojecttDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="deleteform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteform.Designer.cs">
+      <DependentUpon>deleteform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enrollform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enrollform.Designer.cs">
+      <DependentUpon>enrollform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="featureform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="featureform.Designer.cs">
+      <DependentUpon>featureform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filterform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="filterform.Designer.cs">
+      <DependentUpon>filterform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginform.Designer.cs">
+      <DependentUpon>loginform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newform.Designer.cs">
+      <DependentUpon>newform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="selectcriteria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selectcriteria.Designer.cs">
+      <DependentUpon>selectcriteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selectcriteriaEY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selectcriteriaEY.Designer.cs">
+      <DependentUpon>selectcriteriaEY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selectcriteriaGPA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selectcriteriaGPA.Designer.cs">
+      <DependentUpon>selectcriteriaGPA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selectdata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selectdata.Designer.cs">
+      <DependentUpon>selectdata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selectdataform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selectdataform.Designer.cs">
+      <DependentUpon>selectdataform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staffform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffform.Designer.cs">
+      <DependentUpon>staffform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studandcourseform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studandcourseform.Designer.cs">
+      <DependentUpon>studandcourseform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentform.Designer.cs">
+      <DependentUpon>studentform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateform.Designer.cs">
+      <DependentUpon>updateform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updelsel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updelsel.Designer.cs">
+      <DependentUpon>updelsel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updelseladmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updelseladmin.Designer.cs">
+      <DependentUpon>updelseladmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="welcomeform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcomeform.Designer.cs">
+      <DependentUpon>welcomeform.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adddeptform.resx">
+      <DependentUpon>adddeptform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminform.resx">
+      <DependentUpon>adminform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assignform.resx">
+      <DependentUpon>assignform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="createcourseform.resx">
+      <DependentUpon>createcourseform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteform.resx">
+      <DependentUpon>deleteform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enrollform.resx">
+      <DependentUpon>enrollform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="featureform.resx">
+      <DependentUpon>featureform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filterform.resx">
+      <DependentUpon>filterform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginform.resx">
+      <DependentUpon>loginform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newform.resx">
+      <DependentUpon>newform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="selectcriteria.resx">
+      <DependentUpon>selectcriteria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selectcriteriaEY.resx">
+      <DependentUpon>selectcriteriaEY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selectcriteriaGPA.resx">
+      <DependentUpon>selectcriteriaGPA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selectdataform.resx">
+      <DependentUpon>selectdataform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffform.resx">
+      <DependentUpon>staffform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studandcourseform.resx">
+      <DependentUpon>studandcourseform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentform.resx">
+      <DependentUpon>studentform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateform.resx">
+      <DependentUpon>updateform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updelsel.resx">
+      <DependentUpon>updelsel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updelseladmin.resx">
+      <DependentUpon>updelseladmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="welcomeform.resx">
+      <DependentUpon>welcomeform.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="dbprojecttDataSet.xsc">
+      <DependentUpon>dbprojecttDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbprojecttDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbprojecttDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbprojecttDataSet.xss">
+      <DependentUpon>dbprojecttDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
